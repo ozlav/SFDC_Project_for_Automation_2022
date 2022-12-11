@@ -14,6 +14,10 @@
                 <behavior>Edit</behavior>
                 <field>Cust1__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>AddField__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

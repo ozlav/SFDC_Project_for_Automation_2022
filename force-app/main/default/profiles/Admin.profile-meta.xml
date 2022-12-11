@@ -206,6 +206,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>NFR__c.AddField__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>NFR__c.Cust1__c</field>
         <readable>true</readable>
     </fieldPermissions>
