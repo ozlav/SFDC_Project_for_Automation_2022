@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Core_Filter</name>
+        <label>Core Filter</label>
+        <locationX>697</locationX>
+        <locationY>291</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>OpptyStageCheck</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>StageName.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Qualification</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stage</targetReference>
+            </connector>
+            <label>OpptyStageCheck</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Opportunity FLOW II {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity FLOW II</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Stage</name>
+        <label>Stage</label>
+        <locationX>720</locationX>
+        <locationY>574</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Stage_name</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>StageName.StageName</elementReference>
+            </defaultValue>
+            <fieldText>Stage name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>650</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Core_Filter</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>StageName</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>
