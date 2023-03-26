@@ -63,6 +63,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
+
         <masterLabel>00h8G000001BukZ</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>1</sizeY>
@@ -74,6 +75,17 @@
         <summaryLayoutItems>
             <field>Cust1__c</field>
             <posX>1</posX>
+        <masterLabel>00h8G000001Butv</masterLabel>
+        <sizeX>4</sizeX>
+        <sizeY>1</sizeY>
+        <summaryLayoutItems>
+            <field>Name</field>
+            <posX>2</posX>
+            <posY>0</posY>
+        </summaryLayoutItems>
+        <summaryLayoutItems>
+            <field>LastModifiedById</field>
+            <posX>3</posX>
             <posY>0</posY>
         </summaryLayoutItems>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
