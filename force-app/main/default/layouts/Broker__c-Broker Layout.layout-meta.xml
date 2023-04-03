@@ -96,7 +96,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h8G000000RvOG</masterLabel>
+        <masterLabel>00h8G000000RvOa</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>2</sizeY>
         <summaryLayoutItems>
@@ -108,6 +108,11 @@
             <field>Email__c</field>
             <posX>0</posX>
             <posY>1</posY>
+        </summaryLayoutItems>
+        <summaryLayoutItems>
+            <field>CreatedById</field>
+            <posX>1</posX>
+            <posY>0</posY>
         </summaryLayoutItems>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
     </summaryLayout>
